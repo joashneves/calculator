@@ -1,0 +1,44 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(202, 199, 196);
+  }
+.geralBlock{
+    background-color: #ffffff;
+    border-radius: 26px 26px 48px 26px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin: 12px;
+
+}
+.geralBlock img{
+    align-self: center;
+    background-color: rgba(132, 0, 255, 0.562);
+    border-radius: 100%;
+    padding: 2rem;
+    height: 3rem;
+    width: 3rem;
+}
+.topBlock{
+    display: flex;
+    flex-direction: inline;
+    margin: 2rem;
+    align-self: center;
+    font-size: 26px;
+}
+.topBlock input{
+    font-size: 32px;
+    height: 3rem;
+    width: 6rem;
+    margin: 6px;
+    border-radius: 13px;
+    color:hsl(0, 0%, 8%);
+}
+.result{
+    display: flex;
+    align-self: center;
+    font-size: 48px;
+}
