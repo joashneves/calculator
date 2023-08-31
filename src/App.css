@@ -7,12 +7,11 @@ body {
   }
 .geralBlock{
     background-color: #ffffff;
-    border-radius: 26px 26px 48px 26px;
+    border-radius: 26px 26px 148px 26px;
     display: flex;
     align-self: center;
     flex-direction: column;
     margin: 12px;
-
 }
 .geralBlock img{
     align-self: center;
@@ -41,4 +40,25 @@ body {
     display: flex;
     align-self: center;
     font-size: 48px;
+}
+.result-number{
+    color: #8a0083;
+}
+.none{
+    display: none;
+}
+@media (min-width: 768px) {
+    .geralBlock{
+        height: 41rem;
+        width: 43rem;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        direction: inline;
+        margin: 2rem 24rem 2rem 24rem;
+    }
+    .geralBlock img{
+        align-self: end;
+        margin: 1rem 2rem 1rem 1rem;
+    }
 }

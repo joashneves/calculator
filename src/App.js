@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
 
-  const [daysUser, setDaysUser] = useState('--');
+  const [daysUser, setDaysUser] = useState(0);
   const [monthsUser, setMonthsUser] = useState(0);
   const [yearsUser, setYearsUser] = useState(0);
   const currentDate = new Date();
@@ -20,8 +20,6 @@ function App() {
 
   const ageNow =  formattedMonth < monthsUser ? formattedYears - yearsUser - 1: formattedYears - yearsUser ;
   const ageDays = Math.floor(formattedDay % daysUser); 
-
-
 
   return (
     <div className='geralBlock'>
@@ -54,11 +52,13 @@ function App() {
       </article>
       <img src="./assets/images/icon-arrow.svg" alt='icon'/>
       <article className='result'>
+        
         <div>
-            <p><p>{ageNow} years</p>
-            <p>{ ageMonth } month</p>
-            <p>{ ageDays } days</p></p>
+            <p><a className="result-number">{ageNow}</a> years</p>
+            <p><a className="result-number">{ ageMonth }</a> month</p>
+            <p><a className="result-number">{ ageDays }</a> days</p>
         </div>
+        
       </article>
       </div>
   );
